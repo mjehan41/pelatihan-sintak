@@ -1,4 +1,4 @@
-import { CodeXml } from "lucide-react";
+import { CodeXml, Fingerprint, Instagram } from "lucide-react";
 import React from "react";
 
 function NavBar() {
@@ -6,10 +6,10 @@ function NavBar() {
     <header className="sticky top-0 border bg-white/80 border-gray-300">
       <div className="flex max-w-7xl mx-auto justify-between h-16 items-center">
         <div className="flex items-center gap-2">
-          <CodeXml size={32} />
-          <h1 className="font-bold text-xl text-blue-500">SINTAK.</h1>
+          <Fingerprint size={32} />
+          <h1 className="font-bold text-xl text-blue-500">JUST FOR FUN.</h1>
         </div>
-        <ul className="hidden md:flex gap-8">
+        <ul className="items-center md:flex gap-8">
           <li>
             <a href="" className="hover:text-red-500">
               Home
@@ -27,10 +27,11 @@ function NavBar() {
           </li>
         </ul>
         <a
-          href=""
-          className="bg-blue-500 px-4 py-2 text-white rounded-md hover:bg-blue-400"
+          href="https://www.instagram.com/teamjaf_/profilecard/?igsh=MTQ0ZTYzc2FmNTM5OQ=="
+          className="flex gap-2 bg-blue-500 px-4 py-2 text-white rounded-md"
         >
-          Daftar Sekarang
+          <Instagram />
+          <p>Akun Instagram </p>
         </a>
       </div>
     </header>
